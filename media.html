@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media page</title>
+</head>
+<body>
+    <h2>Responsive images on mobile,tablet and laptop</h2>
+    <picture>
+        <!-- Different image sources for different screen sizes -->
+        <source
+          media="(max-width: 480px)"
+          src="./assets/image/mobile image.jpg"
+          alt="Responsiveness for mobile"
+        />
+        <source
+          media="(max-width: 768px)"
+          src="./assets/image/tablet image.jpg"
+          alt="Responsive for tablet"
+        />
+        <source
+          media="(min-width: 1024px)"
+          src="./assets/image/laptop image 3.jpg"
+          alt="Responsiveness for laptop "
+        />
+        <!-- Fallback image -->
+        <img
+          src="assets/image/mobile image.jpg"
+          alt="An image of myself"
+          height="500px"
+        />
+      </picture>
+
+    <h2>My voice</h2>
+    <audio controls 
+     src="assets/audio/One of my Goals.m4a">
+</audio>
+<br>
+<h2>A short video</h2>
+<video controls
+    src="assets/video/ocean.mp4" alt="Video of an ocean" width="300px">
+</video>
+<p>
+<a href="table.html">Altschool Courses</a>
+<a href="index.html">My Home page</a>
+</p>
+</body>
+</html>
+
